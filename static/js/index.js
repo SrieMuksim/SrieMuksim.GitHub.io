@@ -23,6 +23,8 @@ $(document).ready(function () {
         window.location = redirectLink;
     }
 
+    loginSuccess()
+
 });
 
 
@@ -131,9 +133,31 @@ function doSignup() {
     }
 }
 
+function createCookie(name,value,days,path,domain,secure){
+    if(days){
+        var date = new Date();
+        date.setTime(date.getTime()+(5*24*60*60*1000));
+        var expires = date.toGMTString();
+    }
+    else var expires = "";
+    cookieString = name + "=" +excape(value);
+    if(expires) cookieString += ";expires=" +expires;
+    if(path) cookieString += ";path=" + escape(path);
+    if(domain) cookieString += ";domain=" + escape(domain);
+    if(secure) cookieString += ";secure=" + escape(secure);
+    document.cookie = sookieString;
+
+}
+
 function loginSuccess() {
-    doLogin()
-    accounts.style.display = ""
-    loginButton.style.display = "none"
-    accountButton.innerText = "SrieMuksim"
+    var email = localStorage.getItem("email")
+    var password = localStorage.getItem("password")
+    if (email == null || email === '' || !(email===$("email").val()&&password===$("password"))) {
+        window.alert("login fail")
+    }else {
+        doLogin()
+        accounts.style.display = ""
+        loginButton.style.display = "none"
+        accountButton.innerText = "user"
+    }
 }
