@@ -7,7 +7,6 @@ $(document).ready(function () {
     var password = localStorage.getItem("password")
     if (email == null || email === '' ) {
     }else {
-        doLogin()
         accounts.style.display = ""
         loginButton.style.display = "none"
         accountButton.innerText = "user"
