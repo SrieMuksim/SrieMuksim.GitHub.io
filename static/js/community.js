@@ -5,7 +5,7 @@
 $(document).ready(function () {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
-    if (email == null || email === '' || !(email===$("#email").val()&&password===$("#password").val())) {
+    if (email == null || email === '' ) {
     }else {
         doLogin()
         accounts.style.display = ""
