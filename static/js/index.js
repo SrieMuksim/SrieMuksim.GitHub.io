@@ -150,7 +150,8 @@ function createCookie(name,value,days,path,domain,secure){
 function loginSuccess() {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
-    if (email == null || email === '' || !(email===$("#email").val()&&password===$("#password"))) {
+    console.log(email)
+    if (email == null || email === '' || !(email===$("#email").val()&&password===$("#password").val())) {
         window.alert("login fail")
     }else {
         doLogin()
@@ -163,7 +164,7 @@ function loginSuccess() {
 function register() {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
-    if (remail == null || email === '' || !(email===$("#remail").val()&&password===$("#rpassword"))) {
+    if (remail == null || email === '' || !(email===$("#remail").val()&&password===$("#rpassword").val())) {
         localStorage.setItem("email", $("#remail").val())
         localStorage.setItem("password", $("#rpassword").val())
         doLogin()
@@ -175,6 +176,3 @@ function register() {
     }
 }
 
-function closeTip() {
-    $(".tip").hide()
-}
