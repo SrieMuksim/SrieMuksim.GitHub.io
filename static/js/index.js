@@ -174,3 +174,7 @@ function register() {
         accountButton.innerText = "user"
     }
 }
+
+function closeTip() {
+    $(".tip").hide()
+}
