@@ -12,259 +12,287 @@
     <link rel="stylesheet" href="/static/css/animate.css" type="text/css">
     <!-- index -->
     <link rel="stylesheet" href="/static/css/normalize.css" type="text/css">
+    <!-- tip -->
+    <link rel="stylesheet" href="/static/css/tip.css" type="text/css">
     <!-- login/signup -->
     <link rel="stylesheet" href="/static/css/login-signup.css" type="text/css">
 </head>
 
 
 <body>
-<div id="__nuxt">
-    <div id="__layout">
-        <div class="container">
-            <div class="Canvas">
-                <div class="canvas-layout sd">
-                    <header class="fixed-top sd navbar">
-                        <div class="navbar-nav sd">
-                            <a class="nav-logo sd">
-                                <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
-                            </a>
-                            <div class="navbar-menu sd">
-                                <div class="nav-menu-item sd">
-                                    <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="navbar-items sd" id="navbar-navlist">
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/index.html">Home</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="">About</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/gallery.html">Gallery</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/community.html">Community</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/contact.html">Contact</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="menu-box sd" id="menu-box">
-                        <div class="menu-content sd">
-                            <a href="/index.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/index.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/gallery.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/community.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    Community</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/contact.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                        </div>
 
+<div class="container">
+    <div class="Canvas">
+        <div class="canvas-layout sd">
+            <header class="fixed-top sd navbar">
+                <div class="navbar-nav sd">
+                    <a class="nav-logo sd">
+                        <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
+                    </a>
+                    <div class="navbar-menu sd">
+                        <div class="nav-menu-item sd">
+                            <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
+                            </button>
+                        </div>
                     </div>
-                    <div class="sections sd">
-                        <div class="home sd" id="home">
-                            <div class="home-show sd">
-                                <p class="home-title sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                   id="title">A WEB PALACE GATHERING
-                                    FUNNY SOULS. </p>
-                                <div class="home-description-div sd wow fadeInUp" data-wow-duration="1s"
-                                     data-wow-delay="0.5s" id="description">
-                                    <p class="home-description">Offering high-quality, funny and artistic websites
-                                        or apps interface updated once a few days.<br/>
-                                        Assembling websites and apps designers from all over the world.</p>
-                                </div>
-                            </div>
-                            <div class="home-foot sd">
-                                <div class="home-foot-data sd">
-                                    <div class="home-foot-content sd">
-                                        <a href="" class="home-news sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.8s">
-                                            <p class="home-date">2022.9.18</p>
-                                            <div class="home-news-content sd">
-                                                <div class="home-news-limit sd">
-                                                    <p class="home-news-link sd">The website will be open to the public
-                                                        soon.</p>
-                                                    <div class="home-news-string sd"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="navbar-items sd" id="navbar-navlist">
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/index.html">Home</a>
+                            <div class="nav-string"></div>
                         </div>
-                        <div class="about sd">
-                            <div class="about-title sd" id="about">
-                                <p class="about-about sd">[About]</p>
-                            </div>
-                            <div class="about-description sd">
-                                <div class="about-limit sd">
-                                    <p class="about-content sd wow fadeInUp" data-wow-duration="1s"
-                                       data-wow-delay="0.2s">The website was designed and established by
-                                        SrieMuksim.<br/>The
-                                        website’s original intention is to create a place enabling people enjoy delicate
-                                        and
-                                        well-designed websites and apps,meanwhile pass them down. Have a nice trip!
-                                    </p>
-                                </div>
-                                <div class="about-limit sd" style="margin-top: 40px;">
-                                    <p class="about-content sd wow fadeInUp" data-wow-duration="1s"
-                                       data-wow-delay="0.2s">该网站由SrieMuksim设计和建立。
-                                        该网站的初衷是创造一个让人们享受精致和精心设计的网站和应用程序界面的地方，
-                                        同时将它们分享下去。祝您旅途愉快！
-                                    </p>
-                                </div>
-                                <div class="about-view-limit sd">
-                                    <a href="" class="about-view sd">
-                                        <p class="about-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s">view more</p>
-                                        <div class="about-string sd"></div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="">About</a>
+                            <div class="nav-string"></div>
                         </div>
-                        <div class="gallery sd">
-                            <div class="gallery-title sd" id="gallery">
-                                <p class="gallery-gallery sd">[Gallery]</p>
-                            </div>
-                            <div class="gallery-description sd">
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" href="/webDisplay.html">
-                                    <img src="/static/img/web1.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/>  New Form</p>
-                                        <p class="gallery-name-des sd">Advancing the economic networks of the
-                                            future.</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" href="/webDisplay.html">
-                                    <img src="/static/img/web2.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06  <br/> Dgrees - Diseño y creatividad web</p>
-                                        <p class="gallery-name-des sd">Diseñamos productos y experiencias digitales
-                                            relevantes que responden a las necesidades de nuestros clientes, entra y
-                                            descúbrelas.</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" href="/webDisplay.html">
-                                    <img src="/static/img/web3.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/>  Elektra Virtual Museum | Elektra Virtual Museum</p>
-                                        <p class="gallery-name-des sd">Discover the Elektra Virtual Museum (EVM) where
-                                            works of art that exist in the real world are specially modeled and adapted
-                                            for display in this 3D museum space.</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" href="/webDisplay.html">
-                                    <img src="/static/img/web4.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/>  We are Büro</p>
-                                        <p class="gallery-name-des sd">Hello, we are Büro. We craft remarkable
-                                            experiences on screen and paper. </p>
-                                    </div>
-                                </a>
-                                <div class="gallery-view-limit sd">
-                                    <a href="/gallery" class="gallery-view sd">
-                                        <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s">view more</p>
-                                        <div class="gallery-view-string sd"></div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/gallery.html">Gallery</a>
+                            <div class="nav-string"></div>
                         </div>
-                        <div class="community sd">
-                            <div class="community-title sd" id="community">
-                                <p class="community-community sd">[Community]</p>
-                            </div>
-                            <div class="community-description sd wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.2s">
-                                <div class="about-limit sd">
-                                    <p class="about-content sd">In the Community, you can share your favourite design
-                                        to the public (including design drafts). You can also get the inspiration
-                                        from other users' sharing.Before you browse the design sharing, you should log in
-                                        our website. If you don't have an account, you should sign up for free.</p>
-                                </div>
-                                <div class="about-view-limit sd">
-                                    <p class="about-content sd">在社区中，您可以向公众分享您最喜欢的设计（包括设计草案）。您还可以从其他用户的分享中获得灵感。在您浏览设计分享之前，您应该登录我们的网站。如果您没有帐户，可以免费注册。</p>
-                                </div>
-                                <div class="about-view-limit sd">
-                                    <button class="about-view sd" id="loginButton">
-                                        <a class="about-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s" href="/community.html">Go to Community</a>
-                                        <div class="about-string sd"></div>
-                                    </button>
-                                </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/community.html">Community</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <div class="nav-string"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="menu-box sd" id="menu-box">
+                <div class="menu-content sd">
+                    <a href="/index.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/index.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/gallery.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/community.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            Community</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/contact.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sections sd">
+                <div class="home sd" id="home">
+                    <div class="home-show sd">
+                        <p class="home-title sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                           id="title">A WEB PALACE GATHERING
+                            FUNNY SOULS. </p>
+                        <div class="home-description-div sd wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.5s" id="description">
+                            <p class="home-description">Offering high-quality, funny and artistic websites
+                                or apps interface updated once a few days.<br/>
+                                Assembling websites and apps designers from all over the world.</p>
+                        </div>
+                    </div>
+                    <div class="home-foot sd">
+                        <div class="home-foot-data sd">
+                            <div class="home-foot-content sd">
+                                <a href="" class="home-news sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.8s">
+                                    <p class="home-date">2022.9.18</p>
+                                    <div class="home-news-content sd">
+                                        <div class="home-news-limit sd">
+                                            <p class="home-news-link sd">The website will be open to the public
+                                                soon.</p>
+                                            <div class="home-news-string sd"></div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="transparent sd" id="contact"></div>
-                    <div class="fixed contact sd">
-                        <div class="contact-show sd">
-                            <div class="contact-canvas sd">
-                                <div class="contact-content sd">
-                                    <div class="contact-title sd">
-                                        <a href="/contact" class="contact-us sd">
-                                            <p class="contact-us-link sd">CONTACT US</p>
-                                            <div class="contact-string sd"></div>
-                                        </a>
-                                    </div>
-                                    <div class="contact-description sd">
-                                        <p class="contact-description-content">If you encounter many problems, please
-                                            contact us.</p>
-                                    </div>
-                                </div>
-                                <div class="contact-link sd">
-                                    <nav class="contact-nav sd">
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Email</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">QQ</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Twitter</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                    </nav>
-                                </div>
-                            </div>
+                </div>
+                <div class="about sd">
+                    <div class="about-title sd" id="about">
+                        <p class="about-about sd">[About]</p>
+                    </div>
+                    <div class="about-description sd">
+                        <div class="about-limit sd">
+                            <p class="about-content sd wow fadeInUp" data-wow-duration="1s"
+                               data-wow-delay="0.2s">The website was designed and established by
+                                SrieMuksim.<br/>The
+                                website’s original intention is to create a place enabling people enjoy delicate
+                                and
+                                well-designed websites and apps,meanwhile pass them down. Have a nice trip!
+                            </p>
+                        </div>
+                        <div class="about-limit sd" style="margin-top: 40px;">
+                            <p class="about-content sd wow fadeInUp" data-wow-duration="1s"
+                               data-wow-delay="0.2s">该网站由SrieMuksim设计和建立。
+                                该网站的初衷是创造一个让人们享受精致和精心设计的网站和应用程序界面的地方，
+                                同时将它们分享下去。祝您旅途愉快！
+                            </p>
+                        </div>
+                        <div class="about-view-limit sd">
+                            <a href="" class="about-view sd">
+                                <p class="about-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.2s">view more</p>
+                                <div class="about-string sd"></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="sphere sd" id="sphere"></div>
-                        <div class="line sd"></div>
+                </div>
+                <div class="gallery sd">
+                    <div class="gallery-title sd" id="gallery">
+                        <p class="gallery-gallery sd">[Gallery]</p>
+                    </div>
+                    <div class="gallery-description sd">
+                        <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                           href="/webDisplay.html">
+                            <img src="/static/img/web1.jpg" alt="" class="gallery-img">
+                            <div class="gallery-pic-des sd">
+                                <p class="gallery-name sd">2022.10.06 <br/> New Form</p>
+                                <p class="gallery-name-des sd">Advancing the economic networks of the
+                                    future.</p>
+                            </div>
+                        </a>
+                        <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                           href="/webDisplay.html">
+                            <img src="/static/img/web2.jpg" alt="" class="gallery-img">
+                            <div class="gallery-pic-des sd">
+                                <p class="gallery-name sd">2022.10.06 <br/> Dgrees - Diseño y creatividad web</p>
+                                <p class="gallery-name-des sd">Diseñamos productos y experiencias digitales
+                                    relevantes que responden a las necesidades de nuestros clientes, entra y
+                                    descúbrelas.</p>
+                            </div>
+                        </a>
+                        <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                           href="/webDisplay.html">
+                            <img src="/static/img/web3.jpg" alt="" class="gallery-img">
+                            <div class="gallery-pic-des sd">
+                                <p class="gallery-name sd">2022.10.06 <br/> Elektra Virtual Museum | Elektra Virtual
+                                    Museum</p>
+                                <p class="gallery-name-des sd">Discover the Elektra Virtual Museum (EVM) where
+                                    works of art that exist in the real world are specially modeled and adapted
+                                    for display in this 3D museum space.</p>
+                            </div>
+                        </a>
+                        <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                           href="/webDisplay.html">
+                            <img src="/static/img/web4.jpg" alt="" class="gallery-img">
+                            <div class="gallery-pic-des sd">
+                                <p class="gallery-name sd">2022.10.06 <br/> We are Büro</p>
+                                <p class="gallery-name-des sd">Hello, we are Büro. We craft remarkable
+                                    experiences on screen and paper. </p>
+                            </div>
+                        </a>
+                        <div class="gallery-view-limit sd">
+                            <a href="/gallery" class="gallery-view sd">
+                                <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.2s">view more</p>
+                                <div class="gallery-view-string sd"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="community sd">
+                    <div class="community-title sd" id="community">
+                        <p class="community-community sd">[Community]</p>
+                    </div>
+                    <div class="community-description sd wow fadeInUp" data-wow-duration="1s"
+                         data-wow-delay="0.2s">
+                        <div class="about-limit sd">
+                            <p class="about-content sd">In the Community, you can share your favourite design
+                                to the public (including design drafts). You can also get the inspiration
+                                from other users' sharing.Before you browse the design sharing, you should log in
+                                our website. If you don't have an account, you should sign up for free.</p>
+                        </div>
+                        <div class="about-view-limit sd">
+                            <p class="about-content sd">
+                                在社区中，您可以向公众分享您最喜欢的设计（包括设计草案）。您还可以从其他用户的分享中获得灵感。在您浏览设计分享之前，您应该登录我们的网站。如果您没有帐户，可以免费注册。</p>
+                        </div>
+                        <div class="about-view-limit sd">
+                            <button class="about-view sd" id="loginButton">
+                                <a class="about-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.2s" href="/community.html">Go to Community</a>
+                                <div class="about-string sd"></div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="transparent sd" id="contact"></div>
+            <div class="fixed contact sd">
+                <div class="contact-show sd">
+                    <div class="contact-canvas sd">
+                        <div class="contact-content sd">
+                            <div class="contact-title sd">
+                                <a href="/contact" class="contact-us sd">
+                                    <p class="contact-us-link sd">CONTACT US</p>
+                                    <div class="contact-string sd"></div>
+                                </a>
+                            </div>
+                            <div class="contact-description sd">
+                                <p class="contact-description-content">If you encounter many problems, please
+                                    contact us.</p>
+                            </div>
+                        </div>
+                        <div class="contact-link sd">
+                            <nav class="contact-nav sd">
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Email</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">QQ</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Twitter</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="sphere sd" id="sphere"></div>
+                <div class="line sd"></div>
+            </div>
         </div>
+    </div>
+    <div class="tip">
+        <div class="tip-box">
+            <div class="about-title sd">
+                <p class="about-about sd">提示</p>
+            </div>
+            <div class="about-description sd">
+                <div class="about-limit sd">
+                    <p class="about-content sd wow fadeInUp animated">
+                        老师你好，由于本网站语言为英语偏多，我为页面添加了介绍页
+                    </p>
+                </div>
+                <div class="about-view-limit sd">
+                    <a class="about-view sd">
+                        <p class="about-view-more sd wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.2s"
+                           style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            展开详情</p>
+                        <div class="about-string sd"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
