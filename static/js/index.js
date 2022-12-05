@@ -23,8 +23,6 @@ $(document).ready(function () {
         window.location = redirectLink;
     }
 
-    loginSuccess()
-
 });
 
 
@@ -154,6 +152,21 @@ function loginSuccess() {
     var password = localStorage.getItem("password")
     if (email == null || email === '' || !(email===$("email").val()&&password===$("password"))) {
         window.alert("login fail")
+    }else {
+        doLogin()
+        accounts.style.display = ""
+        loginButton.style.display = "none"
+        accountButton.innerText = "user"
+    }
+}
+
+function register() {
+    var email = localStorage.getItem("email")
+    var password = localStorage.getItem("password")
+    if (remail == null || email === '' || !(email===$("remail").val()&&password===$("rpassword"))) {
+        localStorage.setItem("email", $("remail").val())
+        localStorage.setItem("password", $("rpassword").val())
+        doLogin()
     }else {
         doLogin()
         accounts.style.display = ""
