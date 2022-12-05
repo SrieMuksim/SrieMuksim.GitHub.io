@@ -125,9 +125,13 @@
                                    id="title">Community</p>
                                 <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
                                      data-wow-delay="0.5s" id="description">
-                                    <p class="gallery-page-des">Here shows the delicate and well-designed websites and
-                                        app interfaces.<br/>
-                                        Hopefully, these sites will inspire you.</p>
+                                    <p class="gallery-page-des">Welcome to Virtuoso community! <br/>Here you can share your own work to everyone.</p>
+                                </div>
+                                <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
+                                     data-wow-delay="0.5s" id="description2" style="margin-top: 40px">
+                                    <p class="gallery-page-des">
+                                        欢迎来到Virtuoso社区，在这里你可以分享你的作品给任何人。
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -136,37 +140,37 @@
                                 <ul class="gallery-ul sd">
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit active sd">
-                                            <a class="gallery-li-text sd" href="/">All</a>
+                                            <a class="gallery-li-text sd" >All</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" href="/">Most likes</a>
+                                            <a class="gallery-li-text sd" >Most likes</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" href="/">Most collects</a>
+                                            <a class="gallery-li-text sd" >Most collects</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" href="/">Japanese</a>
+                                            <a class="gallery-li-text sd" >Japanese</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" href="/">Chinese</a>
+                                            <a class="gallery-li-text sd" >Chinese</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
                                     <li class="gallery-li sd">
                                         <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" href="/">Minority</a>
+                                            <a class="gallery-li-text sd" >Minority</a>
                                             <div class="gallery-string sd"></div>
                                         </div>
                                     </li>
@@ -278,13 +282,13 @@
                                 <div class="login-email sd">
                                     <p class="login-email-email sd">Email</p>
                                     <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Email"
+                                           placeholder="Please enter your Email" id="remail"
                                     >
                                 </div>
                                 <div class="login-email sd">
                                     <p class="login-email-email sd">Password</p>
                                     <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Password"
+                                           placeholder="Please enter your Password" id="rpassword"
                                     >
                                 </div>
                                 <div class="login-email sd">
@@ -296,7 +300,7 @@
                                 <div class="login-button sd">
                                     <div class="login-signup sd">
                                         <div class="login-log sd">
-                                            <button class="login-button-text sd">Sign up</button>
+                                            <button class="login-button-text sd" onclick="register()">Sign up</button>
                                         </div>
                                         <div class="login-log sd">
                                             <button class="login-button-text sd" onclick="doLogin()">Log in</button>
@@ -360,6 +364,8 @@
 <script type="text/javascript" src="https://cdn.dowebok.com/131/js/wow.min.js"></script>
 
 <script src="/static/js/index.js"></script>
+
+<script src="/static/js/community.js"></script>
 
 
 </body>
