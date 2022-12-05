@@ -150,7 +150,7 @@ function createCookie(name,value,days,path,domain,secure){
 function loginSuccess() {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
-    if (email == null || email === '' || !(email===$("email").val()&&password===$("password"))) {
+    if (email == null || email === '' || !(email===$("#email").val()&&password===$("#password"))) {
         window.alert("login fail")
     }else {
         doLogin()
@@ -163,9 +163,9 @@ function loginSuccess() {
 function register() {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
-    if (remail == null || email === '' || !(email===$("remail").val()&&password===$("rpassword"))) {
-        localStorage.setItem("email", $("remail").val())
-        localStorage.setItem("password", $("rpassword").val())
+    if (remail == null || email === '' || !(email===$("#remail").val()&&password===$("#rpassword"))) {
+        localStorage.setItem("email", $("#remail").val())
+        localStorage.setItem("password", $("#rpassword").val())
         doLogin()
     }else {
         doLogin()
