@@ -22,346 +22,360 @@
 
 
 <body>
-<div id="__nuxt">
-    <div id="__layout">
-        <div class="container">
-            <div class="Canvas">
-                <div class="canvas-layout sd">
-                    <header class="fixed-top sd navbar">
-                        <div class="navbar-nav sd">
-                            <a class="nav-logo">
-                                <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
-                            </a>
-                            <div class="nav-content sd">
-                                <div class="navbar-menu sd">
-                                    <div class="nav-item sd">
-                                        <form action="">
-                                            <input type="text" class="nav-search sd" placeholder="the inspiration"
-                                                   required>
-                                        </form>
-                                    </div>
-                                    <div class="nav-menu-item sd">
-                                        <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="navbar-items sd" id="navbar-navlist">
-                                    <div class="nav-item sd">
-                                        <a class="nav-link sd" href="/index.html">Home</a>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                    <div class="nav-item sd">
-                                        <a class="nav-link sd" href="/gallery.html">Gallery</a>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                    <div class="nav-item sd">
-                                        <a class="nav-link sd" href="/community.html">Community</a>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                    <div class="nav-item sd">
-                                        <a class="nav-link sd" href="/contact.html">Contact</a>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                </div>
-                                <div class="navbar-login sd" id="navbar-login">
-                                    <div class="nav-item sd">
-                                        <button class="nav-link sd" onclick="doLogin()">Log in</button>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                </div>
-                                <div class="navbar-account sd" id="navbar-account" style="display: none">
-                                    <div class="nav-item sd">
-                                        <button class="nav-link sd wow fadeIn" onclick="" data-wow-duration="1s"
-                                                data-wow-delay="0.2s" id="account">user
-                                        </button>
-                                        <div class="nav-string"></div>
-                                    </div>
-                                </div>
+<div class="container">
+    <div class="Canvas">
+        <div class="canvas-layout sd">
+            <header class="fixed-top sd navbar">
+                <div class="navbar-nav sd">
+                    <a class="nav-logo">
+                        <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
+                    </a>
+                    <div class="nav-content sd">
+                        <div class="navbar-menu sd">
+                            <div class="nav-item sd">
+                                <form action="">
+                                    <input type="text" class="nav-search sd" placeholder="the inspiration"
+                                           required>
+                                </form>
+                            </div>
+                            <div class="nav-menu-item sd">
+                                <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
+                                </button>
                             </div>
                         </div>
-                    </header>
-                    <div class="menu-box sd" id="menu-box">
-                        <div class="menu-content sd">
-                            <a href="/index.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/index.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/gallery.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/community.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    Community</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/contact.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Submit your
-                                    site</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="sections sd">
-                        <div class="gallery-home sd">
-                            <div class="gallery-shows sd">
-                                <p class="gallery-page-title sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.2s"
-                                   id="title">Community</p>
-                                <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
-                                     data-wow-delay="0.5s" id="description">
-                                    <p class="gallery-page-des">Welcome to Virtuoso community! <br/>Here you can share your own work to everyone.</p>
-                                </div>
-                                <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
-                                     data-wow-delay="0.5s" id="description2">
-                                    <p class="gallery-page-des">
-                                        欢迎来到Virtuoso社区，在这里你可以分享你的作品给任何人。
-                                    </p>
-                                </div>
+                        <div class="navbar-items sd" id="navbar-navlist">
+                            <div class="nav-item sd">
+                                <a class="nav-link sd" href="/index.html">Home</a>
+                                <div class="nav-string"></div>
+                            </div>
+                            <div class="nav-item sd">
+                                <a class="nav-link sd" href="/gallery.html">Gallery</a>
+                                <div class="nav-string"></div>
+                            </div>
+                            <div class="nav-item sd">
+                                <a class="nav-link sd" href="/community.html">Community</a>
+                                <div class="nav-string"></div>
+                            </div>
+                            <div class="nav-item sd">
+                                <a class="nav-link sd" href="/contact.html">Contact</a>
+                                <div class="nav-string"></div>
                             </div>
                         </div>
-                        <div class="gallery-design sd">
-                            <div class="gallery-category sd">
-                                <ul class="gallery-ul sd">
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit active sd">
-                                            <a class="gallery-li-text sd" >All</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" >Most likes</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" >Most collects</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" >Japanese</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" >Chinese</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-li sd">
-                                        <div class="gallery-li-limit sd">
-                                            <a class="gallery-li-text sd" >Minority</a>
-                                            <div class="gallery-string sd"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="gallery-web-show sd">
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                   href="/webDisplay.html">
-                                    <img src="/static/img/screen1.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/> THEÓ PERM</p>
-                                        <p class="gallery-name-des sd">独自のクリーミーな泡剤形で、施術・仕上がりがもっと快適に。</p>
-                                        <p class="gallery-name sd">By TAKARA BELMONT Corp.</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                   href="/webDisplay.html">
-                                    <img src="/static/img/web2.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/> Dgrees - Diseño y creatividad web
-                                        </p>
-                                        <p class="gallery-name-des sd">Diseñamos productos y experiencias digitales
-                                            relevantes que responden a las necesidades de nuestros clientes, entra y
-                                            descúbrelas.</p>
-                                        <p class="gallery-name sd">By SrieMuksim</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                   href="/webDisplay.html">
-                                    <img src="/static/img/web3.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/> Elektra Virtual Museum | Elektra
-                                            Virtual Museum</p>
-                                        <p class="gallery-name-des sd">Discover the Elektra Virtual Museum (EVM) where
-                                            works of art that exist in the real world are specially modeled and adapted
-                                            for display in this 3D museum space.</p>
-                                        <p class="gallery-name sd">By SrieMuksim</p>
-                                    </div>
-                                </a>
-                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                   href="/webDisplay.html">
-                                    <img src="/static/img/web4.jpg" alt="" class="gallery-img">
-                                    <div class="gallery-pic-des sd">
-                                        <p class="gallery-name sd">2022.10.06 <br/> We are Büro</p>
-                                        <p class="gallery-name-des sd">Hello, we are Büro. We craft remarkable
-                                            experiences on screen and paper. </p>
-                                        <p class="gallery-name sd">By SrieMuksim</p>
-                                    </div>
-                                </a>
-                                <div class="gallery-view-limit sd ">
-                                    <a href="" class="gallery-view sd">
-                                        <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s">Previous</p>
-                                        <div class="gallery-view-string sd"></div>
-                                    </a>
-                                    <a href="" class="gallery-view sd">
-                                        <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s">Next</p>
-                                        <div class="gallery-view-string sd"></div>
-                                    </a>
-                                </div>
+                        <div class="navbar-login sd" id="navbar-login">
+                            <div class="nav-item sd">
+                                <button class="nav-link sd" onclick="doLogin()">Log in</button>
+                                <div class="nav-string"></div>
                             </div>
                         </div>
-                        <div class="login login-animation" id="login">
-                            <div class="login-content sd">
-                                <div class="login-title sd">
-                                    <p class="login-login sd">Log in</p>
+                        <div class="navbar-account sd" id="navbar-account" style="display: none">
+                            <div class="nav-item sd">
+                                <div class="wow fadeIn" onclick="" data-wow-duration="1s"
+                                     data-wow-delay="0.2s" id="account">
+                                    <button class="nav-link">SrieMuksim</button>
+                                    <ul class="profile sd">
+                                        <li><a class="nav-link-profile wow fadeIn" href="" data-wow-duration="1s"
+                                               data-wow-delay="0.1s">Profile</a></li>
+                                        <li><a class="nav-link-profile wow fadeIn" href="" data-wow-duration="1s"
+                                               data-wow-delay="0.2s">Likes</a></li>
+                                        <li><a class="nav-link-profile wow fadeIn" href="" data-wow-duration="1s"
+                                               data-wow-delay="0.3s">Collects</a></li>
+                                        <li><a class="nav-link-profile wow fadeIn" href="/submit.html"
+                                               data-wow-duration="1s"
+                                               data-wow-delay="0.4s">Submit</a></li>
+                                        <li><a class="nav-link-profile wow fadeIn" href="" data-wow-duration="1s"
+                                               data-wow-delay="0.5s">Log out</a></li>
+                                    </ul>
                                 </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Email</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Email" id="email"
-                                    >
-                                </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Password</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Password" id="password"
-                                    >
-                                </div>
-                                <div class="login-button sd">
-                                    <div class="login-signup sd">
-                                        <div class="login-log sd">
-                                            <button class="login-button-text sd" onclick="loginSuccess()">Log in
-                                            </button>
-                                        </div>
-                                        <div class="login-log sd">
-                                            <button class="signup-button-text sd" onclick="doSignup()">Sign up</button>
-                                        </div>
-                                    </div>
-                                    <div class="login-log sd">
-                                        <button class="login-button-back sd" onclick="doLogin()">Back</button>
-                                    </div>
-                                </div>
+                                <div class="nav-string-c"></div>
                             </div>
                         </div>
-                        <div class="login login-animation" id="signup">
-                            <div class="login-content sd">
-                                <div class="login-title sd">
-                                    <p class="login-login sd">Sign up</p>
-                                </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Username</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Username"
-                                    >
-                                </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Email</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Email" id="remail"
-                                    >
-                                </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Password</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Password" id="rpassword"
-                                    >
-                                </div>
-                                <div class="login-email sd">
-                                    <p class="login-email-email sd">Re-enter your Password</p>
-                                    <input type="text" class="login-email-input sd"
-                                           placeholder="Please enter your Password"
-                                    >
-                                </div>
-                                <div class="login-button sd">
-                                    <div class="login-signup sd">
-                                        <div class="login-log sd">
-                                            <button class="login-button-text sd" onclick="register()">Sign up</button>
-                                        </div>
-                                        <div class="login-log sd">
-                                            <button class="login-button-text sd" onclick="doLogin()">Log in</button>
-                                        </div>
-                                    </div>
-                                    <div class="login-log sd">
-                                        <button class="login-button-back sd" onclick="doSignup()">Back</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transparent sd"></div>
-                    <div class="fixed contact sd">
-                        <div class="contact-show sd">
-                            <div class="contact-canvas sd">
-                                <div class="contact-content sd">
-                                    <div class="contact-title sd">
-                                        <a href="" class="contact-us sd">
-                                            <p class="contact-us-link sd">CONTACT US</p>
-                                            <div class="contact-string sd"></div>
-                                        </a>
-                                    </div>
-                                    <div class="contact-description sd">
-                                        <p class="contact-description-content">If you encounter many problems, please
-                                            contact us.</p>
-                                    </div>
-                                </div>
-                                <div class="contact-link sd">
-                                    <nav class="contact-nav sd">
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Email</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">QQ</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Twitter</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="sphere sd" id="sphere"></div>
-                        <div class="line sd"></div>
                     </div>
                 </div>
+            </header>
+            <div class="menu-box sd" id="menu-box">
+                <div class="menu-content sd">
+                    <a href="/index.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/index.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/gallery.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/community.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            Community</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/contact.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Submit your
+                            site</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sections sd">
+                <div class="gallery-home sd">
+                    <div class="gallery-shows sd">
+                        <p class="gallery-page-title sd wow fadeInUp" data-wow-duration="1s"
+                           data-wow-delay="0.2s"
+                           id="title">Community</p>
+                        <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.5s" id="description">
+                            <p class="gallery-page-des">Welcome to Virtuoso community! <br/>Here you can share your own
+                                work to everyone.</p>
+                        </div>
+                        <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.5s" id="description2">
+                            <p class="gallery-page-des">
+                                欢迎来到Virtuoso社区，在这里你可以分享你的作品给任何人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-design sd">
+                    <div class="gallery-category sd">
+                        <ul class="gallery-ul sd">
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit active sd">
+                                    <a class="gallery-li-text sd">All</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit sd">
+                                    <a class="gallery-li-text sd">Most likes</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit sd">
+                                    <a class="gallery-li-text sd">Most collects</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit sd">
+                                    <a class="gallery-li-text sd">Japanese</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit sd">
+                                    <a class="gallery-li-text sd">Chinese</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                            <li class="gallery-li sd">
+                                <div class="gallery-li-limit sd">
+                                    <a class="gallery-li-text sd">Minority</a>
+                                    <div class="gallery-string sd"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery-web-show sd">
+                        <!--                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"-->
+                        <!--                                   href="/webDisplay.html">-->
+                        <!--                                    <img src="/static/img/screen1.jpg" alt="" class="gallery-img">-->
+                        <!--                                    <div class="gallery-pic-des sd">-->
+                        <!--                                        <p class="gallery-name sd">2022.10.06 <br/> THEÓ PERM</p>-->
+                        <!--                                        <p class="gallery-name-des sd">独自のクリーミーな泡剤形で、施術・仕上がりがもっと快適に。</p>-->
+                        <!--                                        <p class="gallery-name sd">By TAKARA BELMONT Corp.</p>-->
+                        <!--                                    </div>-->
+                        <!--                                </a>-->
+                        <!--                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"-->
+                        <!--                                   href="/webDisplay.html">-->
+                        <!--                                    <img src="/static/img/web2.jpg" alt="" class="gallery-img">-->
+                        <!--                                    <div class="gallery-pic-des sd">-->
+                        <!--                                        <p class="gallery-name sd">2022.10.06 <br/> Dgrees - Diseño y creatividad web-->
+                        <!--                                        </p>-->
+                        <!--                                        <p class="gallery-name-des sd">Diseñamos productos y experiencias digitales-->
+                        <!--                                            relevantes que responden a las necesidades de nuestros clientes, entra y-->
+                        <!--                                            descúbrelas.</p>-->
+                        <!--                                        <p class="gallery-name sd">By SrieMuksim</p>-->
+                        <!--                                    </div>-->
+                        <!--                                </a>-->
+                        <!--                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"-->
+                        <!--                                   href="/webDisplay.html">-->
+                        <!--                                    <img src="/static/img/web3.jpg" alt="" class="gallery-img">-->
+                        <!--                                    <div class="gallery-pic-des sd">-->
+                        <!--                                        <p class="gallery-name sd">2022.10.06 <br/> Elektra Virtual Museum | Elektra-->
+                        <!--                                            Virtual Museum</p>-->
+                        <!--                                        <p class="gallery-name-des sd">Discover the Elektra Virtual Museum (EVM) where-->
+                        <!--                                            works of art that exist in the real world are specially modeled and adapted-->
+                        <!--                                            for display in this 3D museum space.</p>-->
+                        <!--                                        <p class="gallery-name sd">By SrieMuksim</p>-->
+                        <!--                                    </div>-->
+                        <!--                                </a>-->
+                        <!--                                <a class="gallery-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"-->
+                        <!--                                   href="/webDisplay.html">-->
+                        <!--                                    <img src="/static/img/web4.jpg" alt="" class="gallery-img">-->
+                        <!--                                    <div class="gallery-pic-des sd">-->
+                        <!--                                        <p class="gallery-name sd">2022.10.06 <br/> We are Büro</p>-->
+                        <!--                                        <p class="gallery-name-des sd">Hello, we are Büro. We craft remarkable-->
+                        <!--                                            experiences on screen and paper. </p>-->
+                        <!--                                        <p class="gallery-name sd">By SrieMuksim</p>-->
+                        <!--                                    </div>-->
+                        <!--                                </a>-->
+                        <!--                                <div class="gallery-view-limit sd ">-->
+                        <!--                                    <a href="" class="gallery-view sd">-->
+                        <!--                                        <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"-->
+                        <!--                                           data-wow-delay="0.2s">Previous</p>-->
+                        <!--                                        <div class="gallery-view-string sd"></div>-->
+                        <!--                                    </a>-->
+                        <!--                                    <a href="" class="gallery-view sd">-->
+                        <!--                                        <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"-->
+                        <!--                                           data-wow-delay="0.2s">Next</p>-->
+                        <!--                                        <div class="gallery-view-string sd"></div>-->
+                        <!--                                    </a>-->
+                        <!--                                </div>-->
+                    </div>
+                </div>
+                <div class="login login-animation" id="login">
+                    <div class="login-content sd">
+                        <div class="login-title sd">
+                            <p class="login-login sd">Log in</p>
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Email</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Email" id="email"
+                            >
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Password</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Password" id="password"
+                            >
+                        </div>
+                        <div class="login-button sd">
+                            <div class="login-signup sd">
+                                <div class="login-log sd">
+                                    <button class="login-button-text sd" onclick="loginSuccess()">Log in
+                                    </button>
+                                </div>
+                                <div class="login-log sd">
+                                    <button class="signup-button-text sd" onclick="doSignup()">Sign up</button>
+                                </div>
+                            </div>
+                            <div class="login-log sd">
+                                <button class="login-button-back sd" onclick="doLogin()">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login login-animation" id="signup">
+                    <div class="login-content sd">
+                        <div class="login-title sd">
+                            <p class="login-login sd">Sign up</p>
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Username</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Username"
+                            >
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Email</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Email" id="remail"
+                            >
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Password</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Password" id="rpassword"
+                            >
+                        </div>
+                        <div class="login-email sd">
+                            <p class="login-email-email sd">Re-enter your Password</p>
+                            <input type="text" class="login-email-input sd"
+                                   placeholder="Please enter your Password"
+                            >
+                        </div>
+                        <div class="login-button sd">
+                            <div class="login-signup sd">
+                                <div class="login-log sd">
+                                    <button class="login-button-text sd" onclick="register()">Sign up</button>
+                                </div>
+                                <div class="login-log sd">
+                                    <button class="login-button-text sd" onclick="doLogin()">Log in</button>
+                                </div>
+                            </div>
+                            <div class="login-log sd">
+                                <button class="login-button-back sd" onclick="doSignup()">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transparent sd"></div>
+            <div class="fixed contact sd">
+                <div class="contact-show sd">
+                    <div class="contact-canvas sd">
+                        <div class="contact-content sd">
+                            <div class="contact-title sd">
+                                <a href="" class="contact-us sd">
+                                    <p class="contact-us-link sd">CONTACT US</p>
+                                    <div class="contact-string sd"></div>
+                                </a>
+                            </div>
+                            <div class="contact-description sd">
+                                <p class="contact-description-content">If you encounter many problems, please
+                                    contact us.</p>
+                            </div>
+                        </div>
+                        <div class="contact-link sd">
+                            <nav class="contact-nav sd">
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Email</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">QQ</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Twitter</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="sphere sd" id="sphere"></div>
+                <div class="line sd"></div>
             </div>
         </div>
     </div>
 </div>
 
+
 <script src="/static/js/jquery-1.11.0.min.js"></script>
 
 <!-- 实现上下滚动页面都有效果 -->
 <script type="text/javascript" src="https://cdn.dowebok.com/131/js/wow.min.js"></script>
+
+<script src="/static/js/ejs.js"></script>
 
 <script src="/static/js/index.js"></script>
 

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Virtuoso | submit</title>
+
+    <meta name="viewport"
+          content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;">
+    <meta name="description"
+          content="A web palace offering high-quality, funny websites updated once a few days, assembling web ethusiasts and designers from all over the world.">
+    <!-- load -->
+    <link rel="stylesheet" href="/static/css/load-text.css" type="text/css">
+    <!-- animate -->
+    <link rel="stylesheet" href="/static/css/animate.css" type="text/css">
+    <!-- index -->
+    <link rel="stylesheet" href="/static/css/normalize.css" type="text/css">
+    <!-- contact -->
+    <link rel="stylesheet" href="/static/css/contact.css" type="text/css">
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="Canvas">
+        <div class="canvas-layout sd">
+            <header class="fixed-top sd navbar">
+                <div class="navbar-nav sd">
+                    <a class="nav-logo sd">
+                        <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
+                    </a>
+                    <div class="navbar-menu sd">
+                        <div class="nav-menu-item sd">
+                            <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
+                            </button>
+                        </div>
+                    </div>
+                    <div class="navbar-items sd" id="navbar-navlist">
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/">Home</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/#about">About</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/gallery">Gallery</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/community">Community</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/contact">Contact</a>
+                            <div class="nav-string"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="menu-box sd" id="menu-box">
+                <div class="menu-content sd">
+                    <a href="/" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/#about" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/gallery" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/community" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            Community</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/contact" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sections sd">
+                <div class="gallery-home sd">
+                    <div class="gallery-shows sd">
+                        <p class="gallery-page-title sd wow fadeInUp" data-wow-duration="1s"
+                           data-wow-delay="0.2s"
+                           id="title">Submit your own website!</p>
+                        <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.5s" id="description">
+                            <p class="gallery-page-des">We need a description of your website, as well as
+                                relevant images, preferably a video.
+                                <br/> Your website will be displayed after our review.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-daily sd">
+                    <div class="gallery-title sd">
+                        <p class="gallery-gallery sd wow fadeInUp" data-wow-duration="1s"
+                           data-wow-delay="0.8s">[Details]</p>
+                    </div>
+                    <div class="gallery-daily-web sd wow fadeInUp" data-wow-duration="1s"
+                         data-wow-delay="0.8s">
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Website Name</p>
+                            <input type="text" class="contact-email-input sd"
+                                   placeholder="Please enter your Website Name" id="submit_name" value="THEÓ PERM"
+                            >
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Description</p>
+                            <input type="text" class="contact-email-input sd"
+                                   placeholder="Please enter Website Description" id="submit_description" value="独自のクリーミーな泡剤形で、施術・仕上がりがもっと快適に。 ジオ
+<!--                                パーマは、リッジの効いたパーマスタイルから、やわらかでナチュラルなパーマスタイルまで
+<!--                                、幅広いデザインと髪質へ対応し、あらゆるメンズのスタイルニーズを叶えていく。"
+                            >
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Type</p>
+                            <select class="contact-select sd" required="required" id="submit_type">
+                                <option value="Chinese">Chinese</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Japanese">English</option>
+                                <option value="OtherCountry">Other Country</option>
+                                <option value="Minority">Minority</option>
+                            </select>
+                        </div>
+                        <div class="contact-email sd">
+                            <ul class="submit-pictures sd">
+                                <button class="submit-pictures-button sd submit-active" onclick="switchPart(1)"
+                                        id="MainPart">
+                                    <p class="contact-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                       data-wow-delay="0.2s">Main Part</p>
+                                    <div class="contact-string sd"></div>
+                                </button>
+                                <button class="submit-pictures-button sd" onclick="switchPart(2)" id="2Part">
+                                    <p class="contact-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                       data-wow-delay="0.2s">2nd Part</p>
+                                    <div class="contact-string sd"></div>
+                                </button>
+                            </ul>
+                        </div>
+                        <div class="community-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
+                             id="picture1" style="margin-bottom: 16px;">
+                            <p class="contact-email-email sd">Shoot</p>
+                            <div class="submit-img defaultImg sd" id="submit-img-div1">
+                                <p class="submit-img-title">click to submit picture</p>
+                                <input type="file" id="submit-img1"
+                                       style="width: 100%; height: 100%; position: absolute; opacity: 0" name="img1"
+                                       onchange="viewImage(1)"/>
+                            </div>
+
+                        </div>
+                        <div class="submit-picture sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
+                             id="pictureSubmit1">
+                            <div class="contact-email sd">
+                                <p class="contact-email-email sd">Topic</p>
+                                <input type="text" class="contact-email-input sd" id="submit_topic1"
+                                       placeholder="Please enter your Topic" value="New Form"
+                                >
+                            </div>
+                            <div class="contact-email sd">
+                                <p class="contact-email-email sd">Content</p>
+                                <textarea class="contact-email-textarea sd" id="submit_content1"
+                                          placeholder="Please enter your Content"
+                                >Advancing the economic networks of the future.</textarea>
+                            </div>
+                        </div>
+
+                        <div class="community-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
+                             id="picture2" style="margin-bottom: 16px;">
+                            <p class="contact-email-email sd">Shoot</p>
+                            <div class="submit-img defaultImg sd" id="submit-img-div2">
+                                <p class="submit-img-title">click to submit picture</p>
+                                <input type="file" id="submit-img2"
+                                       style="width: 100%; height: 100%; position: absolute; opacity: 0" name="img1"
+                                       onchange="viewImage(2)"/>
+                            </div>
+                        </div>
+                        <div class="submit-picture sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
+                             id="pictureSubmit2">
+                            <div class="contact-email sd">
+                                <p class="contact-email-email sd">Topic</p>
+                                <input type="text" class="contact-email-input sd" id="submit_topic2"
+                                       placeholder="Please enter your Topic" value="New Form"
+                                >
+                            </div>
+                            <div class="contact-email sd">
+                                <p class="contact-email-email sd">Content</p>
+                                <textarea class="contact-email-textarea sd" id="submit_content2"
+                                          placeholder="Please enter your Content"
+                                >Advancing the economic networks of the future.</textarea>
+                            </div>
+                        </div>
+
+                        <div class="contact-view-limit sd">
+                            <button class="contact-view sd" onclick="submitData()" id="loginButton">
+                                <p class="contact-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.2s">Submit your Website</p>
+                                <div class="contact-string sd"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transparent sd"></div>
+            <div class="fixed contact sd">
+                <div class="contact-show sd">
+                    <div class="contact-canvas sd">
+                        <div class="contact-content sd">
+                            <div class="contact-title sd">
+                                <a href="" class="contact-us sd">
+                                    <p class="contact-us-link sd">CONTACT US</p>
+                                    <div class="contact-string sd"></div>
+                                </a>
+                            </div>
+                            <div class="contact-description sd">
+                                <p class="contact-description-content">If you encounter many problems, please
+                                    contact us.</p>
+                            </div>
+                        </div>
+                        <div class="contact-link sd">
+                            <nav class="contact-nav sd">
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Email</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">QQ</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Twitter</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="sphere sd" id="sphere"></div>
+                <div class="line sd"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+
+<!-- 实现上下滚动页面都有效果 -->
+<script type="text/javascript" src="https://cdn.dowebok.com/131/js/wow.min.js"></script>
+
+<script src="/static/js/index.js"></script>
+
+<script src="/static/js/submit.js"></script>
+
+</body>
+</html>

@@ -20,183 +20,180 @@
 
 
 <body>
-<div id="__nuxt">
-    <div id="__layout">
-        <div class="container">
-            <div class="Canvas">
-                <div class="canvas-layout sd">
-                    <header class="fixed-top sd navbar">
-                        <div class="navbar-nav sd">
-                            <a class="nav-logo sd">
-                                <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
-                            </a>
-                            <div class="navbar-menu sd">
-                                <div class="nav-menu-item sd">
-                                    <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="navbar-items sd" id="navbar-navlist">
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/index.html">Home</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/index.html">About</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/gallery.html">Gallery</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/community.html">Community</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                                <div class="nav-item sd">
-                                    <a class="nav-link" href="/contact.html">Contact</a>
-                                    <div class="nav-string"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="menu-box sd" id="menu-box">
-                        <div class="menu-content sd">
-                            <a href="/index.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/index.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/gallery.html" class="menu-links sd">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/community.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    Community</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                            <a href="/contact.html" class="menu-links sd" onclick="getMenu()">
-                                <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
-                                <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
-                                     data-wow-delay="0.2s"></div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="sections sd">
-                        <div class="gallery-home sd">
-                            <div class="gallery-shows sd">
-                                <p class="gallery-page-title sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.2s"
-                                   id="title">Contact</p>
-                                <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
-                                     data-wow-delay="0.5s" id="description">
-                                    <p class="gallery-page-des">If you encounter many problems, you can contact us
-                                        through sending the form below to us.</br>We will get back to your message as
-                                        soon as possible. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-daily sd">
-                            <div class="gallery-title sd">
-                                <p class="gallery-gallery sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.8s">[Contact]</p>
-                            </div>
-                            <div class="gallery-daily-web sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.8s">
-                                <div class="contact-email sd">
-                                    <p class="contact-email-email sd">Name</p>
-                                    <input type="text" class="contact-email-input sd"
-                                           placeholder="Please enter your Name"
-                                    >
-                                </div>
-                                <div class="contact-email sd">
-                                    <p class="contact-email-email sd">Email</p>
-                                    <input type="text" class="contact-email-input sd"
-                                           placeholder="Please enter your Email"
-                                    >
-                                </div>
-                                <div class="contact-email sd">
-                                    <p class="contact-email-email sd">Type</p>
-                                    <select class="contact-select sd" required="required">
-                                        <option value="web design bug">web design bug</option>
-                                        <option value="user behavior issues">user behavior issues</option>
-                                    </select>
-                                </div>
-                                <div class="contact-email sd">
-                                    <p class="contact-email-email sd">Topic</p>
-                                    <input type="text" class="contact-email-input sd"
-                                           placeholder="Please enter your Topic"
-                                    >
-                                </div>
-                                <div class="contact-email sd">
-                                    <p class="contact-email-email sd">Content</p>
-                                    <textarea class="contact-email-textarea sd"
-                                              placeholder="Please enter your Content"
-                                    ></textarea>
-                                </div>
-                                <div class="contact-view-limit sd">
-                                    <button class="contact-view sd" onclick="" id="loginButton">
-                                        <p class="contact-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                           data-wow-delay="0.2s">Submit to Us</p>
-                                        <div class="contact-string sd"></div>
-                                    </button>
-                                </div>
-                            </div>
+<div class="container">
+    <div class="Canvas">
+        <div class="canvas-layout sd">
+            <header class="fixed-top sd navbar">
+                <div class="navbar-nav sd">
+                    <a class="nav-logo sd">
+                        <div class="nav-logo-dis" id="logo_text">Virtuoso</div>
+                    </a>
+                    <div class="navbar-menu sd">
+                        <div class="nav-menu-item sd">
+                            <button type="button" class="menu sd" id="menu-button" onclick="getMenu()">Menu
+                            </button>
                         </div>
                     </div>
-                    <div class="transparent sd"></div>
-                    <div class="fixed contact sd">
-                        <div class="contact-show sd">
-                            <div class="contact-canvas sd">
-                                <div class="contact-content sd">
-                                    <div class="contact-title sd">
-                                        <a href="" class="contact-us sd">
-                                            <p class="contact-us-link sd">CONTACT US</p>
-                                            <div class="contact-string sd"></div>
-                                        </a>
-                                    </div>
-                                    <div class="contact-description sd">
-                                        <p class="contact-description-content">If you encounter many problems, please
-                                            contact us.</p>
-                                    </div>
-                                </div>
-                                <div class="contact-link sd">
-                                    <nav class="contact-nav sd">
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Email</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">QQ</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                        <a href="" class="contact-l sd">
-                                            <p class="contact-e sd">Twitter</p>
-                                            <div class="contact-news-string sd"></div>
-                                        </a>
-                                    </nav>
-                                </div>
-                            </div>
+                    <div class="navbar-items sd" id="navbar-navlist">
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/index.html">Home</a>
+                            <div class="nav-string"></div>
                         </div>
-                    </div>
-                    <div class="progress">
-                        <div class="sphere sd" id="sphere"></div>
-                        <div class="line sd"></div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/index.html">About</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/gallery.html">Gallery</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/community.html">Community</a>
+                            <div class="nav-string"></div>
+                        </div>
+                        <div class="nav-item sd">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <div class="nav-string"></div>
+                        </div>
                     </div>
                 </div>
+            </header>
+            <div class="menu-box sd" id="menu-box">
+                <div class="menu-content sd">
+                    <a href="/index.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Home</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/index.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">About</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/gallery.html" class="menu-links sd">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Gallery</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/community.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            Community</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                    <a href="/contact.html" class="menu-links sd" onclick="getMenu()">
+                        <p class="menu-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Contact</p>
+                        <div class="menu-string sd wow fadeIn" data-wow-duration="1s"
+                             data-wow-delay="0.2s"></div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sections sd">
+                <div class="gallery-home sd">
+                    <div class="gallery-shows sd">
+                        <p class="gallery-page-title sd wow fadeInUp" data-wow-duration="1s"
+                           data-wow-delay="0.2s"
+                           id="title">Contact</p>
+                        <div class="gallery-page-description sd wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.5s" id="description">
+                            <p class="gallery-page-des">If you encounter many problems, you can contact us
+                                through sending the form below to us.</br>We will get back to your message as
+                                soon as possible. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-daily sd">
+                    <div class="gallery-title sd">
+                        <p class="gallery-gallery sd wow fadeInUp" data-wow-duration="1s"
+                           data-wow-delay="0.8s">[Contact]</p>
+                    </div>
+                    <div class="gallery-daily-web sd wow fadeInUp" data-wow-duration="1s"
+                         data-wow-delay="0.8s">
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Name</p>
+                            <input type="text" class="contact-email-input sd"
+                                   placeholder="Please enter your Name"
+                            >
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Email</p>
+                            <input type="text" class="contact-email-input sd"
+                                   placeholder="Please enter your Email"
+                            >
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Type</p>
+                            <select class="contact-select sd" required="required">
+                                <option value="web design bug">web design bug</option>
+                                <option value="user behavior issues">user behavior issues</option>
+                            </select>
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Topic</p>
+                            <input type="text" class="contact-email-input sd"
+                                   placeholder="Please enter your Topic"
+                            >
+                        </div>
+                        <div class="contact-email sd">
+                            <p class="contact-email-email sd">Content</p>
+                            <textarea class="contact-email-textarea sd"
+                                      placeholder="Please enter your Content"
+                            ></textarea>
+                        </div>
+                        <div class="contact-view-limit sd">
+                            <button class="contact-view sd" onclick="" id="loginButton">
+                                <p class="contact-view-more sd wow fadeInUp" data-wow-duration="1s"
+                                   data-wow-delay="0.2s">Submit to Us</p>
+                                <div class="contact-string sd"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transparent sd"></div>
+            <div class="fixed contact sd">
+                <div class="contact-show sd">
+                    <div class="contact-canvas sd">
+                        <div class="contact-content sd">
+                            <div class="contact-title sd">
+                                <a href="" class="contact-us sd">
+                                    <p class="contact-us-link sd">CONTACT US</p>
+                                    <div class="contact-string sd"></div>
+                                </a>
+                            </div>
+                            <div class="contact-description sd">
+                                <p class="contact-description-content">If you encounter many problems, please
+                                    contact us.</p>
+                            </div>
+                        </div>
+                        <div class="contact-link sd">
+                            <nav class="contact-nav sd">
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Email</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">QQ</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                                <a href="" class="contact-l sd">
+                                    <p class="contact-e sd">Twitter</p>
+                                    <div class="contact-news-string sd"></div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="sphere sd" id="sphere"></div>
+                <div class="line sd"></div>
             </div>
         </div>
     </div>
 </div>
+
 
 <script src="/static/js/jquery-1.11.0.min.js"></script>
 

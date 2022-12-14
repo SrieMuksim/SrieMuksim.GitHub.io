@@ -155,9 +155,8 @@ function loginSuccess() {
         window.alert("login fail")
     }else {
         doLogin()
-        accounts.style.display = ""
+        accounts.style.display = "flex"
         loginButton.style.display = "none"
-        accountButton.innerText = "user"
     }
 }
 
@@ -170,9 +169,8 @@ function register() {
         doLogin()
     }else {
         doLogin()
-        accounts.style.display = ""
+        accounts.style.display = "flex"
         loginButton.style.display = "none"
-        accountButton.innerText = "user"
     }
 }
 
