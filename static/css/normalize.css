@@ -11,10 +11,14 @@
 }
 
 body {
-    font-family: "word", sans-serif !important;
     color: #212121;
-    font-size: 16px;
+    font-size: 1em;
     background-color: #F5F5F1;
+    background-image: linear-gradient(to bottom, #F5F5F1, #FFFFFF);
+}
+
+* {
+    font-family: "word", sans-serif !important;
 }
 
 a {
@@ -33,10 +37,6 @@ a, div, h1, h2, h3, h4, h5, h6, header, html, body, canvas, button {
     text-decoration: none;
     box-sizing: border-box;
     -webkit-backface-visibility: hidden;
-}
-
-textarea {
-    font-family: "word", sans-serif !important;
 }
 
 html {
