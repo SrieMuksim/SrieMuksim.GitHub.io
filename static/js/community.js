@@ -35,13 +35,14 @@ $(document).ready(function () {
         localStorage.setItem("form", JSON.stringify(webJson))
     }
 
+    form = localStorage.getItem("form")
+    var formJson = {}
+    formJson.form = JSON.parse(form)
+
+    $.get("static/tpl/post.tpl", function(result){
+        var html = ejs.compile(result)(formJson);
+        $(".gallery-web-show").html(html);
+    });
+
 })
 
-var form = localStorage.getItem("form")
-var formJson = {}
-formJson.form = JSON.parse(form)
-
-$.get("static/tpl/post.tpl", function(result){
-    var html = ejs.compile(result)(formJson);
-    $(".gallery-web-show").html(html);
-});
