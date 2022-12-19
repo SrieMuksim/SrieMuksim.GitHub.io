@@ -138,7 +138,7 @@ function createCookie(name,value,days,path,domain,secure){
         var expires = date.toGMTString();
     }
     else var expires = "";
-    cookieString = name + "=" +excape(value);
+    cookieString = name + "=" +escape(value);
     if(expires) cookieString += ";expires=" +expires;
     if(path) cookieString += ";path=" + escape(path);
     if(domain) cookieString += ";domain=" + escape(domain);
@@ -167,6 +167,7 @@ function register() {
         localStorage.setItem("email", $("#remail").val())
         localStorage.setItem("password", $("#rpassword").val())
         doLogin()
+        createCookie(email, $("#remail").val())
     }else {
         doLogin()
         accounts.style.display = "flex"

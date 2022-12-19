@@ -80,6 +80,17 @@ function submitData() {
     form.author = "SrieMuksim"
     form.id =Date.parse(date);
 
+    if(form.name == '') {
+        alert("网站名称不能为空")
+        return;
+    } else if (form.topic1 == '') {
+        alert("主题不能为空")
+        return;
+    } else if (form.topic2 == '') {
+        alert("主题不能为空")
+        return;
+    }
+
 
     var web = localStorage.getItem("form")
     if(web==null || web==='') {

@@ -25,5 +25,13 @@ for(i = 0; i<form.length; i++) {
     }
 }
 
-
-
+function deleteItem() {
+    for(i = 0; i<form.length; i++) {
+        if(form[i].id == id) {
+            form.splice(i,1)
+            $(".gallery-comments").remove()
+            localStorage.setItem("form", JSON.stringify(form))
+            window.location.href = "/community.html"
+        }
+    }
+}
