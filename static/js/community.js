@@ -7,6 +7,8 @@ $(document).ready(function () {
     var email = localStorage.getItem("email")
     var password = localStorage.getItem("password")
     if (email == null || email === '' ) {
+        localStorage.setItem("email", "aaa@qq.com")
+        localStorage.setItem("password", "123")
     }else {
         accounts.style.display = "flex"
         loginButton.style.display = "none"
