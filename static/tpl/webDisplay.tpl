@@ -61,17 +61,16 @@
                             </div>
                         </div>
                         <div class="gallery-view-limit sd">
-                            <a href="https://www.lebel.co.jp/products/mens/theo/theoperm/"
-                               class="gallery-view sd">
+                            <button class="gallery-view sd" onclick="editItem()" style="background-color: transparent;">
                                 <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.8s">Experience now</p>
+                                   data-wow-delay="0.8s">Edit</p>
                                 <div class="gallery-view-string sd"></div>
-                            </a>
-                            <a href="" class="gallery-view sd">
+                            </button>
+                            <button class="gallery-view sd" onclick="deleteItem()" style="background-color: transparent;">
                                 <p class="gallery-view-more sd wow fadeInUp" data-wow-duration="1s"
-                                   data-wow-delay="0.8s">Share</p>
+                                   data-wow-delay="0.8s">Delete</p>
                                 <div class="gallery-view-string sd"></div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +83,7 @@
                         <div class="community-pic sd wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                             <div class="community-line sd"></div>
                             <div class="community-comments-des sd">
-                                <p class="gallery-name sd">SrieMuksim :</p>
+                                <p class="gallery-name sd">SrieMuksim:</p>
                                 <p class="gallery-name-des sd">
                                     朋友，你是否还依稀记得小时候点煤油灯的时代，朋友你是否早已习惯了随手打开电灯，电视，空调的生活；朋友，当你在享用充足电力的惬意中，在几乎感觉不到电力存在的意识里，谁能想到，建国六十年来，祖国电力工业正发生了翻天覆地的变化。</p>
                             </div>
