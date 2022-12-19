@@ -138,13 +138,13 @@
                         </div>
                         <div class="login-email sd">
                             <p class="login-email-email sd">Email</p>
-                            <input type="text" class="login-email-input sd" id="email"
+                            <input type="text" class="login-email-input sd" id="email" value="aaa@qq.com"
                                    placeholder="Please enter your Email"
                             >
                         </div>
                         <div class="login-email sd">
                             <p class="login-email-email sd">Password</p>
-                            <input type="text" class="login-email-input sd" id="password"
+                            <input type="text" class="login-email-input sd" id="password" value="123"
                                    placeholder="Please enter your Password"
                             >
                         </div>
